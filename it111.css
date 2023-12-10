@@ -6,7 +6,6 @@
 }
 
 body {
-    display: block;
     min-height: 100vh;
     background: #f9f9f9;
     overflow-x: hidden;
@@ -239,7 +238,6 @@ header {
     inset: 8px;
     background: #2d2d39;
     background-image: url(img/Intro\ to\ Computing\ \(2\).jpg);
-    background-size: cover;
     border-radius: 15px;
     border: 8px solid #25252b;
 }
@@ -278,7 +276,6 @@ header {
     width: 1130px;
     max-width: 95%;
     margin: 0 auto;
-    display: block;
     align-items: center;
     justify-content: center;
 }
@@ -322,4 +319,130 @@ header {
     color: #101010;
     margin-bottom: 1px;
     font-weight: bold;
+}
+
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 1.5em;
+        margin-right: 0;
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navigation a {
+        margin: 10px 0;
+    }
+
+    .parallax {
+        padding: 50px 0;
+        height: 34.45vh;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .Portfolio {
+        align-items: center;
+    }
+
+    .center-text h2 {
+        font-size: 1em;
+        top: 30px;
+        left: 60px;
+    }
+
+    .Portfolio-content {
+        justify-content: space-evenly;
+    }
+
+    .wavy span {
+        font-size: 25px;
+        bottom: -100%;
+    }
+
+    .home {
+        padding: 0 5%;
+    }
+
+    .home-content {
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 40px;
+    }
+
+    .home-content h3 {
+        font-size: 30px;
+    }
+
+    .logo {
+        margin-right: 0;
+    }
+
+    .Portfolio-content {
+        margin-top: 2.5rem;
+        padding: 50px;
+    }
+
+    .ok .cut {
+        color: transparent;
+    }
+
+    .final-output h2 {
+        font-size: larger;
+    }
+
+    .about-img {
+        height: 415px;
+    }
+
+    .about-img::after {
+        background-size: 100%;
+    }
+
+    .about-img::before {
+        left: 0px;
+        animation-delay: 500ms;
+    }
+
+    .row {
+        padding: 15px;
+    }
+
+    .learns {
+        font-size: small;
+    }
+
+    .flexing {
+        font-size: medium;
+    }
+
+    .about-img {
+        text-align: center;
+    }
+
+    .about-img img,
+    .flexing img {
+        width: 100%;
+    }
+
+    .about-img img:hover,
+    .flexing img:hover {
+        border: none;
+        transform: none;
+        filter: none;
+    }
+
+    .footer {
+        height: auto;
+    }
 }

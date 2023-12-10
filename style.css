@@ -297,3 +297,98 @@ header {
     margin-bottom: 1px;
     font-weight: bold;
 }
+
+
+
+@media only screen and (max-width: 768px) {
+
+    .logo {
+        font-size: 1.5em;
+    }
+
+    body {
+        padding: 10px; 
+    }
+
+    header {
+        padding: 10px;
+        position: relative;
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navigation a {
+        margin: 10px 0;
+        color: #031540;
+    }
+
+    .navigation a::after {
+        color: #031540;
+    }
+
+    .home {
+        padding: 0 5%;
+        background: linear-gradient(0deg, #031540 65%, #fff 35%);
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .home-content {
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 40px;
+    }
+
+    .home-content h3 {
+        font-size: 30px;
+    }
+
+    .home-image {
+        width: 200px; 
+        height: 200px; 
+    }
+
+    .home-image img {
+        bottom: 25px;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-img img {
+        width: 100%;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-text h2 {
+        font-size: 62px;
+    }
+
+    .about-text p {
+        font-size: 18px;
+    }
+
+    .ABOUTME-bottom {
+        flex-direction: column;
+    }
+
+    .ABOUTME-item {
+        width: 100%;
+    }
+
+    .Me video {
+        width: 100%;
+        max-width: none; 
+    }
+}
