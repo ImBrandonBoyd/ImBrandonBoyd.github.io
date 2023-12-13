@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT111 BLOG</title>
     <link rel="stylesheet" href="it111.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 
@@ -12,9 +13,13 @@
     <header>
         <h2 class="logo">BOYD</h2>
         <nav class="navigation">
+           <ul id="sidemenu">
             <a href="index.html">Home</a>
             <a href="IT111Blog.html">IT111 Blog</a>
             <a href="FlexPage.html">Flex Blog</a>
+            <i class='bx bx-x' onclick="closemenu()"></i>
+           </ul>
+            <i class='bx bx-menu' onclick="openmenu()"></i>
         </nav> 
     </header>
 
@@ -102,6 +107,18 @@
         <p>© BRANDON BOYD S. RUBIN 2023</p>
     </div>
 </section>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-150px";
+    }
+</script>
 
 
 </body>
