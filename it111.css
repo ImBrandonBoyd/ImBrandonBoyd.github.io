@@ -334,47 +334,12 @@ header {
     }
 
     .navigation {
-        flex-direction: column;
-        align-items: center;
         text-align: center;
     }
 
     .navigation a {
         margin: 10px 0;
-        color: #f9f9f9;
-    }
-
-    nav .bx {
-        display: block;
-        font-size: 25px;
-    }
-
-    nav ul {
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        background: linear-gradient(135deg rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        top: 0;
-        right: -150px;
-        width: 150px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 2;
-        transition: right 0.5s;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 25px;
-    }
-
-    nav ul .bx {
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
+        color: #0f312a;
     }
 
     .parallax {
